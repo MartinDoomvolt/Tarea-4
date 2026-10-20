@@ -8,23 +8,24 @@
 
 ---
 
-## 📄 Documentación Oficial en PDF
+## 📦 Archivos Principales de Entrega
 
-El informe completo de entrega con la investigación teórica, diagramación conceptual, diseño de clases y evidencia fotográfica de ejecución se encuentra disponible directamente aquí:
-
-👉 **[📥 Ver / Descargar Documento Oficial (PDF)](Documentacion_Tarea4_IPC1.pdf)**
+| Archivo | Tipo | Descripción | Enlace directo |
+| :--- | :---: | :--- | :---: |
+| **Documentacion_Tarea4_IPC1.pdf** | 📄 PDF | Informe completo con teoría, diseño de clases y evidencias | **[📥 Ver Documento PDF](Documentacion_Tarea4_IPC1.pdf)** |
+| **Tarea4_IPC1.jar** | ☕ JAR | Ejecutable de la aplicación listo para correr | **[📥 Descargar Ejecutable .jar](Tarea4_IPC1.jar)** |
 
 ---
 
 ## 📌 Descripción del Proyecto
 
-Aplicación de escritorio desarrollada en **Java** con interfaz gráfica **Java Swing** pura (programada 100% mediante código, sin GUI Builder ni arrastrar y soltar componentes).
+Aplicación de escritorio desarrollada en **Java** con interfaz gráfica **Java Swing** pura (programada 100% mediante código, sin GUI Builder ni herramientas de arrastrar y soltar componentes).
 
 El sistema integra los principios de la Programación Orientada a Objetos (POO), encapsulamiento, delegación de eventos y validación de datos en cuatro módulos funcionales:
 
 1. **Gestión de Cursos:** Registro y validación de cursos académicos (código, nombre del curso, tutor responsable).
 2. **Gestión de Tareas:** Asignación jerárquica de tareas (título, descripción, fecha de entrega) vinculadas a un curso específico seleccionado mediante un `JComboBox`.
-3. **Conversor de Temperatura:** Conversión bidireccional de grados Celsius a Fahrenheit y Kelvin, con validación de entradas numéricas y diálogos modales `JOptionPane`.
+3. **Conversor de Temperatura:** Conversión precisa de grados Celsius a Fahrenheit y Kelvin, con validación de entradas numéricas y diálogos modales `JOptionPane`.
 4. **Visualización y Reportes:** Área de texto formateada (`JTextArea` con `JScrollPane`) que genera reportes estructurados de cursos y tareas registradas.
 
 ---
@@ -33,6 +34,7 @@ El sistema integra los principios de la Programación Orientada a Objetos (POO),
 
 ```text
 ├── Documentacion_Tarea4_IPC1.pdf   # Documento oficial de evidencia y reporte teórico
+├── Tarea4_IPC1.jar                 # Archivo ejecutable .jar de la aplicación
 ├── README.md                       # Documentación principal del repositorio
 ├── .gitignore                      # Configuración de exclusión para Git
 ├── Tarea4_IPC1.iml                 # Módulo de configuración para IntelliJ IDEA
@@ -51,12 +53,18 @@ El sistema integra los principios de la Programación Orientada a Objetos (POO),
 
 ## 🚀 Compilación y Ejecución
 
-### Desde IntelliJ IDEA:
-1. Clonar o abrir el repositorio en IntelliJ IDEA.
+### Opción 1: Ejecutar directamente el archivo `.jar`
+Puedes hacer doble clic en `Tarea4_IPC1.jar` o ejecutar en terminal:
+```bash
+java -jar Tarea4_IPC1.jar
+```
+
+### Opción 2: Desde IntelliJ IDEA
+1. Abrir la carpeta del proyecto en IntelliJ IDEA.
 2. Localizar el archivo [`Main.java`](src/tarea4/principal/Main.java) en `src/tarea4/principal/Main.java`.
 3. Presionar el botón verde **Run ▶** (o <kbd>Shift</kbd> + <kbd>F10</kbd>).
 
-### Desde la Consola (Terminal):
+### Opción 3: Compilar desde la terminal (javac)
 ```bash
 # 1. Compilar los archivos fuente
 javac -encoding UTF-8 -d bin src/tarea4/modelo/*.java src/tarea4/vista/*.java src/tarea4/principal/Main.java
