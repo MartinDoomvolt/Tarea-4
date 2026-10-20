@@ -1,9 +1,9 @@
-# Archivos compilados
+# Archivos compilados y binarios
 bin/
 out/
 *.class
 
-# IntelliJ IDEA
+# IntelliJ IDEA temporales y de usuario
 .idea/workspace.xml
 .idea/shelf/
 .idea/httpRequests/
@@ -11,7 +11,10 @@ out/
 .idea/dataSources.local.xml
 *.iws
 
-# Archivos del sistema
+# Archivos temporales del sistema
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Scripts locales
+SUBIR_A_GITHUB.bat
